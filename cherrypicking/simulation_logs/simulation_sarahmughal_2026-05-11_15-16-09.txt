@@ -1,0 +1,55 @@
+Simulation Log
+============================================================
+User:       sarahmughal
+Timestamp:  2026-05-11_15-16-09
+Protocol:   OT-2 Cherrypicking
+CSV:        /Users/sarahmughal/Desktop/oldham lab/opentrons scripts/cherrypicking/ot2_cherrypicking_test.csv
+Pipette:    p300_single_gen2 on right mount
+Tip reuse:  always
+============================================================
+
+Loaded 7 transfers from CSV
+
+--- Pre-Run Volume Check ---
+Slot   Well   Labware                                        Transfer Vol   Dead Vol  Safety +20%  MINIMUM LOAD
+--------------------------------------------------------------------------------------------------------------
+1      A1     nest_96_wellplate_200ul_flat                          10.0uL       5.0uL         2.0uL         17.0uL
+1      B2     nest_96_wellplate_200ul_flat                          20.0uL       5.0uL         4.0uL         29.0uL
+1      C3     nest_96_wellplate_200ul_flat                          30.0uL       5.0uL         6.0uL         41.0uL
+1      D4     nest_96_wellplate_200ul_flat                          40.0uL       5.0uL         8.0uL         53.0uL
+2      A1     nest_12_reservoir_15ml                                50.0uL     200.0uL        10.0uL        260.0uL
+2      A2     nest_12_reservoir_15ml                                75.0uL     200.0uL        15.0uL        290.0uL
+2      A3     nest_12_reservoir_15ml                               100.0uL     200.0uL        20.0uL        320.0uL
+--------------------------------------------------------------------------------------------------------------
+Dead Vol    = liquid unreachable at the bottom of each vessel
+Safety +20% = extra buffer on top of total transfer volume
+MINIMUM LOAD = fill each source well to at least this amount before starting
+
+--- Deck Setup ---
+Loaded labware:  nest_96_wellplate_200ul_flat in slot 1
+Loaded labware:  nest_96_wellplate_100ul_pcr_full_skirt in slot 4
+Loaded labware:  nest_12_reservoir_15ml in slot 2
+Loaded labware:  nest_96_wellplate_2ml_deep in slot 5
+Loaded tiprack:  opentrons_96_tiprack_300ul in slot 3
+Loaded tiprack:  opentrons_96_tiprack_300ul in slot 6
+Loaded tiprack:  opentrons_96_tiprack_300ul in slot 7
+Loaded tiprack:  opentrons_96_tiprack_300ul in slot 8
+Loaded tiprack:  opentrons_96_tiprack_300ul in slot 9
+Loaded tiprack:  opentrons_96_tiprack_300ul in slot 10
+Loaded tiprack:  opentrons_96_tiprack_300ul in slot 11
+
+Pipette ready:   p300_single_gen2 on right mount
+Tips available:  672
+
+--- Transfers ---
+Transfer 1:   10.0 uL | Slot 1 A1  -> Slot 4 A1  | Aspiration height: 1 mm
+Transfer 2:   20.0 uL | Slot 1 B2  -> Slot 4 B2  | Aspiration height: 1 mm
+Transfer 3:   30.0 uL | Slot 1 C3  -> Slot 4 C3  | Aspiration height: 1 mm
+Transfer 4:   40.0 uL | Slot 1 D4  -> Slot 4 D4  | Aspiration height: 1 mm
+Transfer 5:   50.0 uL | Slot 2 A1  -> Slot 5 E1  | Aspiration height: 3 mm
+Transfer 6:   75.0 uL | Slot 2 A2  -> Slot 5 F2  | Aspiration height: 3 mm
+Transfer 7:  100.0 uL | Slot 2 A3  -> Slot 5 G3  | Aspiration height: 3 mm
+
+============================================================
+Simulation complete: 7 transfers logged
+Log saved to: /Users/sarahmughal/Desktop/oldham lab/opentrons scripts/cherrypicking/simulation_logs/simulation_sarahmughal_2026-05-11_15-16-09.txt

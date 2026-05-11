@@ -1,0 +1,8 @@
+Source Labware,Source Slot,Source Well,Source Aspiration Height Above Bottom (in mm),Dest Labware,Dest Slot,Dest Well,Volume (in ul)
+nest_96_wellplate_200ul_flat,1,A1,1,nest_96_wellplate_100ul_pcr_full_skirt,4,A1,10
+nest_96_wellplate_200ul_flat,1,B2,1,nest_96_wellplate_100ul_pcr_full_skirt,4,B2,20
+nest_96_wellplate_200ul_flat,1,C3,1,nest_96_wellplate_100ul_pcr_full_skirt,4,C3,30
+nest_96_wellplate_200ul_flat,1,D4,1,nest_96_wellplate_100ul_pcr_full_skirt,4,D4,40
+nest_12_reservoir_15ml,2,A1,3,nest_96_wellplate_2ml_deep,5,E1,50
+nest_12_reservoir_15ml,2,A2,3,nest_96_wellplate_2ml_deep,5,F2,75
+nest_12_reservoir_15ml,2,A3,3,nest_96_wellplate_2ml_deep,5,G3,100
