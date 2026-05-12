@@ -1,0 +1,13 @@
+Well,Sample Name,RNA Concentration (ng/uL),RNA Volume (uL),DNA Concentration (ng/uL),DNA Volume (uL)
+A1,Section_001,45.2,50,82.3,50
+A2,Section_002,38.7,50,91.0,50
+A3,Section_003,12.8,50,55.1,50
+A4,Section_004,0,50,44.0,50
+A5,Section_005,62.4,50,110.2,50
+A6,Section_006,29.1,50,67.8,50
+A7,Section_007,41.5,50,88.4,50
+A8,Section_008,5.3,50,22.1,50
+B1,Section_009,55.0,50,95.3,50
+B2,Section_010,48.3,50,78.6,50
+B3,Section_011,33.9,50,61.2,50
+B4,Section_012,0,50,0,50

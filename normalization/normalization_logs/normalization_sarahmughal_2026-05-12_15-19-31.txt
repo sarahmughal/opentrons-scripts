@@ -1,0 +1,104 @@
+MOMA Normalization Log
+=================================================================
+User:              sarahmughal
+Timestamp:         2026-05-12_15-19-31
+Protocol:          MOMA RNA/DNA Normalization
+Qubit CSV:         /Users/sarahmughal/Desktop/oldham lab/opentrons scripts/normalization/qubit_data_example.csv
+RNA target:        20.0 ng in 10.0 uL
+DNA target:        50.0 ng in 10.0 uL
+RNA QC threshold:  200.0 ng total yield required
+=================================================================
+
+--- QC Report ---
+Total sections loaded:    12
+RNA pass (≥200.0 ng):       10
+RNA fail:                 2
+DNA pass:                 11
+DNA fail:                 1
+
+Well   Sample           RNA total     RNA QC  RNA spl  RNA H2O |  DNA total     DNA QC  DNA spl  DNA H2O
+---------------------------------------------------------------------------------------------------------
+A1     Section_001          2260ng       PASS    0.44uL    9.56uL |      4115ng       PASS    0.61uL    9.39uL
+A2     Section_002          1935ng       PASS    0.52uL    9.48uL |      4550ng       PASS    0.55uL    9.45uL
+A3     Section_003           640ng       PASS    1.56uL    8.44uL |      2755ng       PASS    0.91uL    9.09uL
+A4     Section_004             0ng       FAIL    0.00uL    0.00uL |      2200ng       PASS    1.14uL    8.86uL
+A5     Section_005          3120ng       PASS    0.32uL    9.68uL |      5510ng       PASS    0.45uL    9.55uL
+A6     Section_006          1455ng       PASS    0.69uL    9.31uL |      3390ng       PASS    0.74uL    9.26uL
+A7     Section_007          2075ng       PASS    0.48uL    9.52uL |      4420ng       PASS    0.57uL    9.43uL
+A8     Section_008           265ng       PASS    3.77uL    6.23uL |      1105ng       PASS    2.26uL    7.74uL
+B1     Section_009          2750ng       PASS    0.36uL    9.64uL |      4765ng       PASS    0.52uL    9.48uL
+B2     Section_010          2415ng       PASS    0.41uL    9.59uL |      3930ng       PASS    0.64uL    9.36uL
+B3     Section_011          1695ng       PASS    0.59uL    9.41uL |      3060ng       PASS    0.82uL    9.18uL
+B4     Section_012             0ng       FAIL    0.00uL    0.00uL |         0ng       FAIL    0.00uL    0.00uL
+---------------------------------------------------------------------------------------------------------
+
+--- Failed Sections (excluded from normalization) ---
+  A4 (Section_004) RNA: FAIL — total yield 0 ng < 200.0 ng threshold
+  B4 (Section_012) RNA: FAIL — total yield 0 ng < 200.0 ng threshold
+  B4 (Section_012) DNA: FAIL — no DNA detected
+
+--- Deck Setup ---
+Slot 1: AllPrep eluate source plate (NEST 96 deep well)
+Slot 2: RNA normalized output plate (NEST 96 PCR full skirt)
+Slot 3: DNA normalized output plate (NEST 96 PCR full skirt)
+Slot 4: Water reservoir (NEST 12-well, A1 = nuclease-free water)
+Slot 5–6: p20 tipracks
+Slot 7–8: p300 tipracks
+
+--- Step 1: Add water to RNA plate ---
+  A1 (Section_001) RNA water: 9.56 uL
+  A2 (Section_002) RNA water: 9.48 uL
+  A3 (Section_003) RNA water: 8.44 uL
+  A5 (Section_005) RNA water: 9.68 uL
+  A6 (Section_006) RNA water: 9.31 uL
+  A7 (Section_007) RNA water: 9.52 uL
+  A8 (Section_008) RNA water: 6.23 uL
+  B1 (Section_009) RNA water: 9.64 uL
+  B2 (Section_010) RNA water: 9.59 uL
+  B3 (Section_011) RNA water: 9.41 uL
+
+--- Step 2: Add water to DNA plate ---
+  A1 (Section_001) DNA water: 9.39 uL
+  A2 (Section_002) DNA water: 9.45 uL
+  A3 (Section_003) DNA water: 9.09 uL
+  A4 (Section_004) DNA water: 8.86 uL
+  A5 (Section_005) DNA water: 9.55 uL
+  A6 (Section_006) DNA water: 9.26 uL
+  A7 (Section_007) DNA water: 9.43 uL
+  A8 (Section_008) DNA water: 7.74 uL
+  B1 (Section_009) DNA water: 9.48 uL
+  B2 (Section_010) DNA water: 9.36 uL
+  B3 (Section_011) DNA water: 9.18 uL
+
+--- Step 3: Add RNA sample to RNA plate ---
+  A1 (Section_001) RNA sample: 0.44 uL
+  A2 (Section_002) RNA sample: 0.52 uL
+  A3 (Section_003) RNA sample: 1.56 uL
+  A5 (Section_005) RNA sample: 0.32 uL
+  A6 (Section_006) RNA sample: 0.69 uL
+  A7 (Section_007) RNA sample: 0.48 uL
+  A8 (Section_008) RNA sample: 3.77 uL
+  B1 (Section_009) RNA sample: 0.36 uL
+  B2 (Section_010) RNA sample: 0.41 uL
+  B3 (Section_011) RNA sample: 0.59 uL
+
+--- Step 4: Add DNA sample to DNA plate ---
+  A1 (Section_001) DNA sample: 0.61 uL
+  A2 (Section_002) DNA sample: 0.55 uL
+  A3 (Section_003) DNA sample: 0.91 uL
+  A4 (Section_004) DNA sample: 1.14 uL
+  A5 (Section_005) DNA sample: 0.45 uL
+  A6 (Section_006) DNA sample: 0.74 uL
+  A7 (Section_007) DNA sample: 0.57 uL
+  A8 (Section_008) DNA sample: 2.26 uL
+  B1 (Section_009) DNA sample: 0.52 uL
+  B2 (Section_010) DNA sample: 0.64 uL
+  B3 (Section_011) DNA sample: 0.82 uL
+
+=================================================================
+Normalization complete
+RNA sections normalized: 10 / 12
+DNA sections normalized: 11 / 12
+RNA output plate:        Slot 2 — 20.0 ng in 10.0 uL per well
+DNA output plate:        Slot 3 — 50.0 ng in 10.0 uL per well
+Log saved to:            /Users/sarahmughal/Desktop/oldham lab/opentrons scripts/normalization/normalization_logs/normalization_sarahmughal_2026-05-12_15-19-31.txt
